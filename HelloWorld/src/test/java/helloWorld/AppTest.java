@@ -28,5 +28,18 @@ class AppTest {
 	void test() {
 		assertEquals(h.getMessage(),"Hello World!");
 	}
-
+	
+	@Test
+	void testGetName() {
+		assertEquals("", h.getName());
+	}
+	
+	@Test
+	void testSetName() {
+		h.setName("ola");
+		assertEquals("ola", h.getName());
+		
+	}
+	
+	
 }
