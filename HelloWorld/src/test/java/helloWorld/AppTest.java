@@ -2,6 +2,11 @@ package helloWorld;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -39,7 +44,5 @@ class AppTest {
 		h.setName("ola");
 		assertEquals("ola", h.getName());
 		
-	}
-	
-	
+	}	
 }
