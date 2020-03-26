@@ -51,9 +51,9 @@ public class App {
     }
 }
 
-//Antonio Galguinho 
-//Bárbara Ferreira
-//Beatriz Ragageles
-//Henrique Branco
-//Joana Cavalheiro
-//Joana Gaspar
+//Antonio Galguinho nr 82718 
+//Bárbara Ferreira nr 82607
+//Beatriz Ragageles nr 82469
+//Henrique Branco nr 82093
+//Joana Cavalheiro nr 82182
+//Joana Gaspar nr 82255
