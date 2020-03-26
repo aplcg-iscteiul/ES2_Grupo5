@@ -12,7 +12,6 @@ public class App {
 	
 	/** The name. */
 	private String name = "";
-
 	/**
 	 * Gets the name.
 	 *
@@ -30,7 +29,6 @@ public class App {
    	public String getMessage() {
 	         return "Hello World!";
 	   }
-
 	   /**
    	 * Sets the name.
    	 *
