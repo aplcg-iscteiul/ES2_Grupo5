@@ -49,3 +49,10 @@ public class App {
         System.out.println(h.getMessage());
     }
 }
+
+//Antonio Galguinho 
+//Bárbara Ferreira
+//Beatriz Ragageles
+//Henrique Branco
+//Joana Cavalheiro
+//Joana Gaspar
