@@ -9,7 +9,6 @@ package helloWorld;
  */
 public class App {
 
-	private int i = 1;
 	/** The name. */
 	private String name = "";
 	/**
