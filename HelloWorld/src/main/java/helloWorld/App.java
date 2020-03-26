@@ -7,9 +7,9 @@ package helloWorld;
  * @since 13/03/2020
  * 
  */
-//isto é apenas para testar 
 public class App {
 
+	private int i = 0;
 	/** The name. */
 	private String name = "";
 	/**
