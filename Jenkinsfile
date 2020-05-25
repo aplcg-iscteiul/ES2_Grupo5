@@ -1,6 +1,5 @@
 def dockeruser = "jrlmc"
-def imagenameMysql = "mysql"
-def imagenameWordPress = "wordpress"
+def imagename = "wordpress:20"
 def container = "wordpress"
 
 node {
@@ -23,19 +22,11 @@ stage('Remove Existing Container'){
     }
     
 stage ('Runing Container to test built Docker Image'){
-   powershell "docker run -dit --name ${container} -p 80:80 ${imagenameMysql}"
+   powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
     }
     
-   stage ('Runing Container to test built Docker Image'){
-      powershell "docker run -dit --name ${container} -p 80:90 ${imagenameWordPress}"
-    }
-   
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagenameMysql} ${env.dockeruser}/mysql"
-    }
-   
-   stage('Tag Docker Image'){
-    powershell "docker tag ${imagenameWordPress} ${env.dockeruser}/wordpress"
+    powershell "docker tag ${imagename} ${env.dockeruser}/wordpress"
     }
 
 stage('Docker Login and Push Image'){
