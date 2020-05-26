@@ -13,6 +13,7 @@ stage('Build Docker Image'){
      powershell "docker-compose up -d"
     }
     
+   /*
    stage('Stop Existing Container'){
      powershell "docker stop ${container}"
     }
@@ -35,4 +36,5 @@ stage('Docker Login and Push Image'){
     }
     powershell "docker push ${dockeruser}/wordpress"
     }
+    */
 }
