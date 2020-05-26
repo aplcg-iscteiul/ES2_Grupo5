@@ -1,6 +1,6 @@
-def dockeruser = "jrlmc"
+/*def dockeruser = "jrlmc"*/
 def imagename = "openjdk:latest"
-def container = "apache2"
+def container = "java"
 
 node {
    echo 'Building Apache Docker Image'
