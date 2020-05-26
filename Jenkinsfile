@@ -1,4 +1,4 @@
-def ddockeruser = "jrlmc"
+def dockeruser = "jrlmc"
 def imagename = "openjdk:latest"
 def container = "apache2"
 node {
