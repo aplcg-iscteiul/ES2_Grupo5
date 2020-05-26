@@ -1,6 +1,7 @@
 def dockeruser = "jrlmc"
 def imagename = "openjdk:latest"
 def container = "apache2"
+
 node {
    echo 'Building Apache Docker Image'
 
@@ -8,11 +9,11 @@ stage('Git Checkout') {
     git 'https://github.com/aplcg-iscteiul/ES2_Grupo5.git'
     }
     
-stage('Build Docker Imagae'){
+stage('Build Docker Image') { 
      powershell "docker build -t  ${imagename} ."
     }
     
-stage('Stop Existing Container'){
+stage('Stop Existing Container') {
      powershell "docker stop ${container}"
     }
     
@@ -23,7 +24,7 @@ stage('Remove Existing Container'){
 stage ('Runing Container to test built Docker Image'){
     powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
     }
-    
+/*    
 stage('Tag Docker Image'){
     powershell "docker tag ${imagename} ${env.dockeruser}/openjdk:latest"
     }
@@ -34,4 +35,5 @@ stage('Docker Login and Push Image'){
     }
     powershell "docker push ${dockeruser}/openjdk:latest"
     }
+   */
 }
