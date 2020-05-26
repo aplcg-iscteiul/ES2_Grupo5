@@ -1,11 +1,11 @@
 def ddockeruser = "jrlmc"
-def imagename = "wordpress:5.4.1"
+def imagename = "openjdk:latest"
 def container = "apache2"
 node {
    echo 'Building Apache Docker Image'
 
 stage('Git Checkout') {
-    git 'https://github.com/amarsingh3d/jenkins-pipeline'
+    git 'https://github.com/aplcg-iscteiul/ES2_Grupo5.git'
     }
     
 stage('Build Docker Imagae'){
@@ -25,14 +25,13 @@ stage ('Runing Container to test built Docker Image'){
     }
     
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/wordpress:5.4.1"
+    powershell "docker tag ${imagename} ${env.dockeruser}/openjdk:latest"
     }
 
 stage('Docker Login and Push Image'){
     withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
     powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
     }
-    powershell "docker push ${dockeruser}/wordpress:5.4.1"
+    powershell "docker push ${dockeruser}/openjdk:latest"
     }
-
 }
