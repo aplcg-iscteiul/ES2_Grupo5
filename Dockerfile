@@ -1,5 +1,5 @@
 # Source Image name
-from wordpress:5.4.1
+from openjdk
 # Mainter Name
 maintainer Joana Cavalheiro
 # Command to update and install Apache packages
