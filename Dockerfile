@@ -1,5 +1,5 @@
 # Source Image name
-from ubuntu:16.04
+from wordpress:5.4.1
 # Mainter Name
 maintainer Joana Cavalheiro
 # Command to update and install Apache packages
