@@ -27,7 +27,7 @@ services:
       WORDPRESS_DB_PASSWORD: wordpress
       WORDPRESS_DB_NAME: wordpress
     ports:
-      - '8000:80'
+      - '80:80'
     networks:
       - back
 networks:
