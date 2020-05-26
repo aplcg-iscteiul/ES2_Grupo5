@@ -1,5 +1,5 @@
 def dockeruser = "jrlmc"
-def imagename = "php:7.0-apache"
+def imagename = "wordpress:lastest"
 def container = "apache2"
 
 node {
