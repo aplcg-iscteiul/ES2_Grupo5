@@ -10,7 +10,8 @@ stage('Git Checkout') {
     }
     
 stage('Build Docker Image'){
-     powershell "docker-compose up -d"
+   //  powershell "docker-compose up -d"
+   powershell "docker build -t  ${imagename} ."
     }
     
    /*
