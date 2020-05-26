@@ -28,14 +28,14 @@ stage ('Runing Container to test built Docker Image'){
     }
     
 stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/wordpress:latest"
+    powershell "docker tag ${imagename} ${env.dockeruser}/wordpress:5.4.1"
     }
 
 stage('Docker Login and Push Image'){
     withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
     powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
     }
-    powershell "docker push ${dockeruser}/wordpress:latest"
+    powershell "docker push ${dockeruser}/wordpress:5.4.1"
     }
     
 }
