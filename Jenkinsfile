@@ -1,5 +1,5 @@
 /*def dockeruser = "jrlmc"*/
-def imagename = "openjdk:8"
+def imagename = "my-java-app"
 def container = "helloWorld"
 
 node {
