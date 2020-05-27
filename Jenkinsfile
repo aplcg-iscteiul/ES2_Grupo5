@@ -1,6 +1,6 @@
 def dockeruser = "jrlmc"
-def imagename = "ubuntu:16.04"
-def container = "apache2"
+def imagename = "openjdk:8"
+def container = "app_java"
 node {
    echo 'Building Apache Docker Image'
 
@@ -23,5 +23,4 @@ stage('Remove Existing Container'){
 stage ('Runing Container to test built Docker Image'){
     powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
     }
-
 }
