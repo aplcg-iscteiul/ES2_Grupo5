@@ -1,4 +1,3 @@
-/*def dockeruser = "jrlmc"*/
 def imagename = "my-java-app"
 def container = "helloWorld"
 
@@ -22,18 +21,6 @@ stage('Remove Existing Container'){
     }
     
 stage ('Runing Container to test built Docker Image'){
-    powershell "docker run -dit --name ${container} -p 80:80 ${imagename}"
+    powershell "docker run -dit --name ${container} -p 8088:80 ${imagename}"
     }
-/*    
-stage('Tag Docker Image'){
-    powershell "docker tag ${imagename} ${env.dockeruser}/openjdk:latest"
-    }
-
-stage('Docker Login and Push Image'){
-    withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', passwordVariable: 'dockerpasswd', usernameVariable: 'dockeruser')]) {
-    powershell "docker login -u ${dockeruser} -p ${dockerpasswd}"
-    }
-    powershell "docker push ${dockeruser}/openjdk:latest"
-    }
-   */
 }
