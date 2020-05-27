@@ -1,5 +1,5 @@
 FROM openjdk:8
-WORKDIR /HelloWorld/
-ADD HelloWorld.jar HelloWorld.jar
-EXPOSE 8080
-CMD java - jar HelloWorld.jar
+COPY target/java-archive-0.0.1-SNAPSHOT.jar /user/src/HelloWorld/helloWorld.jar
+WORKDIR src/main/java/helloWorld
+EXPOSE 8085
+CMD java -jar helloWorld.jar
