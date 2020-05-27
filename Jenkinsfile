@@ -22,6 +22,6 @@ stage('Remove Existing Container'){
     */
     
 stage ('Runing Container to test built Docker Image'){
-    powershell "docker run -dit --name ${container} -p 8010:80 ${imagename}"
+    powershell "docker run -dit --name ${container} -p 8080:8080 ${imagename}"
     }
 }
