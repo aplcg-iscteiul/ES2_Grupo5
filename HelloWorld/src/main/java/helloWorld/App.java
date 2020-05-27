@@ -47,15 +47,7 @@ public class App {
     
     	App h = new App();
     	System.out.println(h.getMessage());
-    
-    	try {
-			Thread.sleep(1000000000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-    	
-        System.out.println(h.getMessage());
+   
     }
 }
 
