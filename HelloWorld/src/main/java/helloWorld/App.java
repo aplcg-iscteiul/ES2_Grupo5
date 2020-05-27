@@ -46,14 +46,15 @@ public class App {
     public static void main(String[] args) {	
     
     	App h = new App();
+    	System.out.println(h.getMessage());
     
+    	try {
+			Thread.sleep(1000000000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
         System.out.println(h.getMessage());
     }
 }
 
-//Antonio Galguinho nr 82718 
-//Bárbara Ferreira nr 82607
-//Beatriz Ragageles nr 82469
-//Henrique Branco nr 82093
-//Joana Cavalheiro nr 82182
-//Joana Gaspar nr 82255
