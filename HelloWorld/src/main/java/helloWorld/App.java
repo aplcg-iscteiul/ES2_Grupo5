@@ -9,6 +9,7 @@ package helloWorld;
  */
 public class App {
 
+	private int i = 0;
 	/** The name. */
 	private String name = "";
 	/**
@@ -49,3 +50,10 @@ public class App {
         System.out.println(h.getMessage());
     }
 }
+
+//Antonio Galguinho nr 82718 
+//Bárbara Ferreira nr 82607
+//Beatriz Ragageles nr 82469
+//Henrique Branco nr 82093
+//Joana Cavalheiro nr 82182
+//Joana Gaspar nr 82255
