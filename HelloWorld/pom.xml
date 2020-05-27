@@ -2,14 +2,15 @@
   xmlns="http://maven.apache.org/POM/4.0.0" 
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+ 
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>5</groupId>
-  <artifactId>5</artifactId>
+  <groupId>localdomain.localhost.helloworld</groupId>
+  <artifactId>java-archive</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>5</name>
+  <name>helloworld</name>
   <url>http://maven.apache.org</url>
 
   <properties>	
@@ -78,7 +79,6 @@
 					</execution>
 				</executions>
 			</plugin>
-    		
         </plugins>
     </build>
     
