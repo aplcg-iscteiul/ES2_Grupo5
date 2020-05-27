@@ -4,7 +4,7 @@ node {
    echo 'Building Apache Docker Image'
 
 stage('Git Checkout') {
-    git 'https://github.com/jvpreis/ESII'
+    git 'https://github.com/aplcg-iscteiul/ES2_Grupo5.git'
     }
     
 stage('Build Docker Imagae'){
