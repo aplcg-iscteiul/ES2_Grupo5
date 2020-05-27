@@ -1,4 +1,4 @@
-def dockeruser = "jblcg"
+def dockeruser = "jrlmc"
 def imagename = "openjdk:8"
 def container = "app_java"
 node {
