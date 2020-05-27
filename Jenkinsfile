@@ -1,4 +1,4 @@
-def imagename = "my-java-app"
+def imagename = "openjdk:8"
 def container = "helloWorld"
 
 node {
