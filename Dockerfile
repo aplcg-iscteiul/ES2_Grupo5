@@ -1,4 +1,4 @@
-FROM openjdk:12-alpine
-COPY HelloWorld/target/java-archive-*.jar /HelloWorld.jar
-EXPOSE 8085
-CMD ["java" , "-jar" "/HelloWorld.jar"]
+FROM openjdk:8
+EXPOSE 8080
+ADD HelloWorld/target/java-archive-0.0.1-SNAPSHOT.jar /HelloWorld.jar
+CMD java -jar /HelloWorld.jar
